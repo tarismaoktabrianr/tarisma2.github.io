@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contoh Event Handling dan Manipulasi DOM</title>
+  <link rel="stylesheet" href="beranda.css">
+</head>
+<body>
+  <div class="center-container">
+    <h1 id="judul">WELCOME MY PORTOFOLIO</h1>
+    <p class="paragraf">Sebelum masuk ke portofolio, kerjakan kuis berikut atau lewati jika ingin langsung melihat portofolio.</p>
+    <div class="tombol-container">
+      <button class="neon-button" id="tombolKuis">Kerjakan Kuis</button>
+      <button class="neon-button" id="tombolLewati">Lewati dan Masuk ke Portofolio</button>
+    </div>
+  </div>
+
+  <script>
+    const tombolKuis = document.getElementById('tombolKuis');
+    const tombolLewati = document.getElementById('tombolLewati');
+
+    tombolKuis.addEventListener('click', function () {
+      window.location.href = "kuis.html";
+    });
+
+    tombolLewati.addEventListener('click', function () {
+      window.location.href = "Portofolio.html";
+    });
+  </script>
+</body>
+</html>
+
+
+

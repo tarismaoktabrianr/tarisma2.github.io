@@ -1,0 +1,55 @@
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #000;
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-container {
+  text-align: center;
+  transform: translateY(0px); /* ↓ turun 50px dari tengah */
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.paragraf {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.tombol-container {
+  display: flex;
+  flex-direction: row; /* ← sejajarkan ke samping */
+  justify-content: center;
+  gap: 30px; /* jarak antar tombol */
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.neon-button {
+  background-color: #001f99;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 0 20px #001f99, 0 0 40px #001f99, 0 0 60px #001f99;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.neon-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #00f, 0 0 60px #00f, 0 0 90px #00f;
+}
+
+
